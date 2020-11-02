@@ -1,7 +1,7 @@
 package packages.greetings;
 
 public class Greeter {
-    public void sayHello() {
+    public String sayHello() {
         return "Hello World!";
     }
 }
