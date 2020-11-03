@@ -1,6 +1,6 @@
 package stringtype;
 
-import java.sql.SQLOutput;
+
 
 public class StringTypeMain {
     public static void main(String[] args) {
