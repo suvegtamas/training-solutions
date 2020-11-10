@@ -29,6 +29,10 @@ public class Position {
     public void setBonus(int bonus) {
         this.bonus = bonus;
     }
+    @Override
+    public String toString() {
+        return "Position: " + getName() + " " + getBonus();
+    }
 
     public static void main(String[] args) {
         Position position1 = new Position("test1", 152_000);
@@ -38,7 +42,7 @@ public class Position {
         positionList.add(position2);
         for (Position pos : positionList) {
             if ( pos.getBonus() > 150_000) {
-                System.out.println(pos.getName() + " | " + pos.getBonus());
+                System.out.println(pos);
             }
         }
     }
