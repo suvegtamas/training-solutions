@@ -3,7 +3,7 @@ package week02;
 import java.util.Scanner;
 
 public class Controller {
-    private Office office = new Office();
+   
 
     public void readOffice() {
         Office office = new Office();
