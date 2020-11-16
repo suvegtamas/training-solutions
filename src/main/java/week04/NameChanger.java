@@ -7,7 +7,7 @@ public class NameChanger {
         if ( fullName == null || "".equals(fullName)) {
             throw new IllegalArgumentException("Invalid Name:" + fullName);
         }
-        this.fullName = fullName.toString();
+        this.fullName = fullName.toString() ;
     }
     public String changeFirstName(String firstName) {
 

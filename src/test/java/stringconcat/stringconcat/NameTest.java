@@ -34,10 +34,10 @@ public class NameTest {
     @Test
     public void westernStyleNameConcatenation() {
 
-        assertEquals("Mr.John G Smith", new Name("Smith", "G", "John", Title.MR).concatNameWesternStyle());
+        assertEquals("Mr. John G Smith", new Name("Smith", "G", "John", Title.MR).concatNameWesternStyle());
         assertEquals("John G Smith", new Name("Smith", "G", "John").concatNameWesternStyle());
-        assertEquals("Mr.John Smith", new Name("Smith", "", "John", Title.MR).concatNameWesternStyle());
-        assertEquals("Mr.John Smith", new Name("Smith", null, "John", Title.MR).concatNameWesternStyle());
+        assertEquals("Mr. John Smith", new Name("Smith", "", "John", Title.MR).concatNameWesternStyle());
+        assertEquals("Mr. John Smith", new Name("Smith", null, "John", Title.MR).concatNameWesternStyle());
     }
 
     @Test

@@ -11,8 +11,8 @@ public class NameChangerTest {
     void NameChangerTest() {
 
         assertEquals("John Doe", new NameChanger("John Doe").getFullName());
-       // Exception ex = assertThrows(IllegalArgumentException.class, () -> new NameChanger(" "));
-       // assertEquals("Invalid name:", ex.getMessage());
+        Exception ex = assertThrows(IllegalArgumentException.class, () -> new NameChanger(" "));
+        assertEquals("Invalid name:", ex.getMessage());
     }
     @Test
     void changeNameTest() {

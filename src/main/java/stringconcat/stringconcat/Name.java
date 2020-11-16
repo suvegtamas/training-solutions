@@ -11,7 +11,7 @@ public class Name {
         this.title = title;
     }
     public boolean isEmpty(String s) {
-        return s == null || s.isEmpty();
+        return s == null || "".equals(s.trim());
     }
     public Name(String familyName, String middleName, String givenName) {
         if (isEmpty(familyName) || isEmpty(givenName)) {
@@ -27,13 +27,14 @@ public class Name {
 
         if(title != null) {
             fullName = title.getTitle();
+            fullName = fullName.concat(" ");
             fullName = fullName.concat(givenName);
 
         } else {
             fullName = givenName;
         }
         fullName = fullName.concat(" ");
-        if ( middleName != null && " ".equals(middleName)) {
+        if ( middleName != null && !"".equals(middleName)) {
             fullName = fullName.concat(middleName);
             fullName = fullName.concat(" ");
         }
@@ -47,12 +48,13 @@ public class Name {
 
         if (title != null) {
             fullName = title.getTitle();
+            fullName += " ";
             fullName += familyName;
         } else {
-            fullName += familyName;
+            fullName = familyName;
         }
         fullName += " ";
-        if(middleName != null && !" ".equals(middleName)) {
+        if(middleName != null && !"".equals(middleName)) {
             fullName += middleName;
             fullName += " ";
         }
