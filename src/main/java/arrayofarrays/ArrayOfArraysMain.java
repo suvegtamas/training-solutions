@@ -19,8 +19,8 @@ public class ArrayOfArraysMain {
 
     public int[][] multiplicationTable(int size) {
         int[][] multiplicationTable = new int[size][size];
-        for (int i = 0; i < size; i++) {
-            for (int j = 0; j < size; j++) {
+        for (int i = 0; i < multiplicationTable.length; i++) {
+            for (int j = 0; j < multiplicationTable[i].length; j++) {
                 multiplicationTable[i][j] = (i + 1) * (j + 1);
             }
         }
@@ -51,7 +51,7 @@ public class ArrayOfArraysMain {
         ArrayOfArraysMain arrayOfArraysMain = new ArrayOfArraysMain();
 
         System.out.println("Multiplication table");
-        arrayOfArraysMain.printArrayOfArrays(arrayOfArraysMain.multiplicationTable(10));
+        arrayOfArraysMain.printArrayOfArrays(arrayOfArraysMain.multiplicationTable(4));
 
 
         System.out.println("Triangular matrix");
