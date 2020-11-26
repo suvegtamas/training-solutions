@@ -19,8 +19,8 @@ public class Product {
         return exp;
     }
 
-    public static void main(String[] args) {
-        Product product = new Product("test", 2020, 12, 01);
-        System.out.println(product.getExp());
+    @Override
+    public String toString() {
+        return name + " " + exp;
     }
 }
