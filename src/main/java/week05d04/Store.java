@@ -28,15 +28,7 @@ public class Store {
         return products.toString();
     }
 
-    public static void main(String[] args) {
-        Store s = new Store();
-        Product p = new Product("Tej", 2020, 05, 12);
-        Product p2 = new Product("Tej", 2019, 05, 12);
-        s.addProduct(p);
-        s.addProduct(p2);
-        System.out.println(s);
-        System.out.println(s.getNumberOfExpired());
-    }
+
 
 
 }
