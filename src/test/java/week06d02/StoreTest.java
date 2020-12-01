@@ -9,11 +9,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class StoreTest {
     @Test
     void productCountByCategoryTest() {
-        Store store = new Store(Arrays.asList(new Product("Alma","Fruits",1200),
-                                              new Product("Alma","Fruits",1200)));
+        Store store = new Store(Arrays.asList(new Product("Alma",Category.OTHER,1200),
+                                              new Product("Alma",Category.OTHER,1200)));
 
 
-        assertEquals(2,store.getProductByCategoryName("Fruits"));
+        assertEquals(2,store.getProductByCategoryName(Category.OTHER));
 
 
 

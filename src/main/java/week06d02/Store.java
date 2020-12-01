@@ -11,10 +11,10 @@ public class Store {
         this.products = products;
     }
 
-    public int getProductByCategoryName(String cname) {
+    public int getProductByCategoryName(Category cname) {
         int count = 0;
         for (Product p : products) {
-            if (p.getCategory().equals(cname)) {
+            if (p.getCategory() == cname) {
                 count++;
             }
         }
