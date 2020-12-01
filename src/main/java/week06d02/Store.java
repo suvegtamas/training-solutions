@@ -21,11 +21,5 @@ public class Store {
         return count;
     }
 
-    public static void main(String[] args) {
-        Store store = new Store(Arrays.asList(new Product("Alma","Fruits",1200),
-                new Product("Alma","Fruits",1200)));
 
-
-        System.out.println(store.getProductByCategoryName("Fruits"));
-    }
 }
