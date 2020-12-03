@@ -9,7 +9,7 @@ public class Item {
         if (name == null || "".equals(name)) {
             throw new IllegalArgumentException("Name must be given");
         }
-        if (month == 0) {
+        if (month <=0 ||month > 12) {
             throw new IllegalArgumentException("Month has to be between 1-12");
         }
         if (price < 0) {

@@ -12,8 +12,8 @@ public class ItemTest {
         assertEquals("Name must be given",ex.getMessage());
     }
     @Test
-    void ifMonthIsZero() {
-        Exception ex = assertThrows(IllegalArgumentException.class, () -> new Item("test1", 0, 12));
+    void ifMonthIsIncorrect() {
+        Exception ex = assertThrows(IllegalArgumentException.class, () -> new Item("test1", 13, 12));
         assertEquals("Month has to be between 1-12", ex.getMessage());
     }
     @Test

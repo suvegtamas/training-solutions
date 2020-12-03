@@ -11,14 +11,14 @@ public class Budget {
         this.items = items;
     }
 
-    public String getItemByMonth(int month) {
-        StringBuilder sb = new StringBuilder();
+    public List<Item> getItemByMonth(int month) {
+        List<Item> result = new ArrayList<>();
         for (Item i : items) {
             if ( i.getMonth() == month) {
-                sb.append(i);
+                result.add(i);
             }
         }
-        return sb.toString();
+        return result;
     }
 
 

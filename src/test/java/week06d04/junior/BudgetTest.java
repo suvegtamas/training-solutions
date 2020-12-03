@@ -18,7 +18,12 @@ public class BudgetTest {
                     new Item("test3",4,1200));
         Budget b = new Budget(items);
 
-        assertEquals("test2 3 1200" ,b.getItemByMonth(3));
+        assertEquals(Arrays.asList("test2 3 1200") ,b.getItemByMonth(3));
 
+    }
+    @Test
+    void ifNameIsWrongTest() {
+        Exception ex = assertThrows(IllegalArgumentException.class, () -> new Budget(Arrays.asList(new Item("", 2, 3))));
+        assertEquals("Name must be given",ex.getMessage());
     }
 }
