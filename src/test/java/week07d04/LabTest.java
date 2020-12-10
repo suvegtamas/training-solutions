@@ -27,6 +27,19 @@ public class LabTest {
         lab.complete(time);
         assertEquals(time, lab.getCompletedAt());
     }
+    @Test
+    void toStringTest() {
+        Lab lab = new Lab("Methods");
+        String labStr = lab.toString();
+        assertEquals("Lab{title='Methods', completed=false, completedAt=null}",labStr);
+    }
 
+    @Test
+    void toStringTest2() {
+        LocalDateTime time = LocalDateTime.of(2020,12,11 , 10 , 30 , 12);
+        Lab lab = new Lab("Methods", time);
+        String labStr = lab.toString();
+        assertEquals("Lab{title='Methods', completed=true, completedAt=2020-12-11T10:30:12}",labStr);
+    }
 
 }

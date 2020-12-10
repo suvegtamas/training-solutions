@@ -37,6 +37,15 @@ public class Lab {
     public LocalDateTime getCompletedAt() {
         return completedAt;
     }
+
+    @Override
+    public String toString() {
+        return "Lab{" +
+                "title='" + title + '\'' +
+                ", completed=" + completed +
+                ", completedAt=" + completedAt +
+                '}';
+    }
     //    Hozz létre egy week07d04.Lab nevű osztályt, ami azt tárolja el, hogy melyik feladattal készültél el.
 //    Három attribútuma: title ami a tananyag neve, egy completed, hogy elkészültél-e vele, és a completedAt ,
 //    ami azt tárolja, hogy mikor. Legyen két konstruktora! Az egyik csak a címet várja, ekkor úgy állítsa be
