@@ -3,10 +3,11 @@ package week02;
 import java.util.Scanner;
 
 public class Controller {
+    private Office office = new Office();
    
 
     public void readOffice() {
-        Office office = new Office();
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Adja meg a targyalok szamat:");
 
@@ -26,6 +27,7 @@ public class Controller {
             scanner.nextLine();
 
             MeetingRoom meetingRoom = new MeetingRoom(name,width,length);
+
             office.addMeetingRoom(meetingRoom);
         }
 

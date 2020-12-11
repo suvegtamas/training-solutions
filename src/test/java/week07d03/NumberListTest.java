@@ -16,7 +16,7 @@ public class NumberListTest {
         List<Integer> numbers = Arrays.asList(1, 2, 3 ,3 ,5);
         boolean result = nl.isIncreasing(numbers);
         assertEquals(true, result);
-    
+
     }
     @Test
     void ifFalseTest() {

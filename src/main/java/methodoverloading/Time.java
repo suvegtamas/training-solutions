@@ -64,4 +64,9 @@ public class Time {
         }
         return false;
     }
+
+    @Override
+    public String toString() {
+        return  hours + ":" + minutes;
+    }
 }

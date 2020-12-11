@@ -1,6 +1,6 @@
 package week06d04.senior;
 
-import org.junit.jupiter.api.BeforeEach;
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -10,8 +10,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ShoppingCartTest {
-  
-   @DisplayName("Add item to the ArrayList")
+    @DisplayName("Add item to the ArrayList")
    @Test
     void addItemTest() {
        List<Item> items = new ArrayList<>();
