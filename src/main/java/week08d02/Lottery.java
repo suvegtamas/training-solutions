@@ -10,23 +10,14 @@ public class Lottery {
     // Generates lottery numbers, randomly , and sorted. (Index out of bounds exception not resolved).
     public List<Integer> getNumbers() {
         while ( numbers.size() != 5) {
-            numbers.add(rnd.nextInt(90) + 1);
-            removeIfInList(rnd.nextInt(90) + 1);
+            int n = rnd.nextInt(90) + 1;
+           if ( !numbers.contains(n)) {
+               numbers.add(n);
+           }
         }
         Collections.sort(numbers);
         return numbers;
     }
-    //---------------------------------------------------------------------------------------------------------------------
-    // Removes the number if the list contains it twice.
-    public void removeIfInList(int number) {
-        for (Integer i : numbers) {
-            if (i == number) {
-                i = rnd.nextInt(90) + 1;
-            }
-        }
-    }
-
-
     //*****************************************************************************************************************************
     // Run the program
     public static void main(String[] args) {
