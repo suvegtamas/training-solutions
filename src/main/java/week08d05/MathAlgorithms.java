@@ -3,6 +3,9 @@ package week08d05;
 public class MathAlgorithms {
 
    public int greatestCommonDivisor(int first, int second ) {
+       if(first < 0 || second < 0) {
+           throw new IllegalArgumentException("We don't accept negative numbers.");
+       }
        if(first == 0 || second == 0) {
            throw new IllegalArgumentException("Division by 0.");
        }

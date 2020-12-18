@@ -18,4 +18,11 @@ public class MathAlgorithmsTest {
         Exception ex = assertThrows(IllegalArgumentException.class, () -> new MathAlgorithms().greatestCommonDivisor(0,3));
         assertEquals("Division by 0.", ex.getMessage());
     }
+    @DisplayName("Negatives should throw exception.")
+    @Test
+    void negativesThrowsExceptionTest() {
+        Exception ex = assertThrows(IllegalArgumentException.class, () -> new MathAlgorithms().greatestCommonDivisor(-1,3));
+        assertEquals("We don't accept negative numbers.", ex.getMessage());
+    }
+
 }
