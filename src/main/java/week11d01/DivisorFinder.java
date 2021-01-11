@@ -8,6 +8,8 @@ public class DivisorFinder {
             if (n % Integer.parseInt(String.valueOf(number.charAt(i))) == 0) {
                 System.out.println("Divisor: " + number.charAt(i));
                 count++;
+            } else {
+                System.out.println("Not divisor: " + number.charAt(i));
             }
         }
         return count;
