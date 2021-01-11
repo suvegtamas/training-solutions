@@ -2,6 +2,9 @@ package week11d01;
 
 public class DivisorFinder {
     public int findDivisors(int n) {
+        if (n == 0) {
+            throw new IllegalStateException("Division by 0 no allowed");
+        }
         int count = 0;
         String number = String.valueOf(n);
         for (int i = 0; i < number.length(); i++) {
