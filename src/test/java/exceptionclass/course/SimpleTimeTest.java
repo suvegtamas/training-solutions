@@ -1,5 +1,7 @@
-package exceptionclass;
+package exceptionclass.course;
 
+import exceptionclass.course.InvalidTimeException;
+import exceptionclass.course.SimpleTime;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

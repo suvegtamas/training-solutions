@@ -1,4 +1,6 @@
-package exceptionclass;
+package exceptionclass.course;
+
+import exceptionclass.course.InvalidTimeException;
 
 public class SimpleTime {
     private int hour;

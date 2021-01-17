@@ -1,4 +1,4 @@
-package exceptionclass;
+package exceptionclass.course;
 
 public class Course {
     private String name;
