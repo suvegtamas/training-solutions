@@ -1,4 +1,6 @@
-package classstructureconstructors;
+package classstructureintegrate;
+
+import classstructureintegrate.BankAccount;
 
 import java.util.Scanner;
 
