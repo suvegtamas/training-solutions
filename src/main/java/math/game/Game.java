@@ -1,6 +1,6 @@
-package mathrandom.game;
+package math.game;
 
-import mathrandom.Point;
+import math.Point;
 
 public class Game {
     public static void main(String[] args) {

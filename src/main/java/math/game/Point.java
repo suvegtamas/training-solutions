@@ -1,4 +1,4 @@
-package mathrandom;
+package math;
 
 public class Point {
     private int x;

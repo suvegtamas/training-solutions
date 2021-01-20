@@ -1,4 +1,4 @@
-package mathrandom.RoundingAnomaly;
+package math.RoundingAnomaly;
 
 import java.util.Random;
 

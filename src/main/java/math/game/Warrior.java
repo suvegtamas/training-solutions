@@ -1,6 +1,6 @@
-package mathrandom.game;
+package math.game;
 
-import mathrandom.Point;
+import math.Point;
 
 import java.util.Random;
 
