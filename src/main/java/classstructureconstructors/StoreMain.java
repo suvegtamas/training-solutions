@@ -1,4 +1,4 @@
-package classstructurecontructors;
+package classstructureconstructors;
 
 public class StoreMain {
     public static void main(String[] args) {

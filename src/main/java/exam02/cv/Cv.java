@@ -15,7 +15,7 @@ public class Cv {
     }
 
     public void addSkills(String... skill) {
-       
+
     }
 
     public int findSkillLevelByName(String name) {

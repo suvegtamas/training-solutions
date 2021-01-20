@@ -1,4 +1,4 @@
-package week02;
+package meetingrooms;
 
 public class MeetingRoomMain {
     public static void main(String[] args) {

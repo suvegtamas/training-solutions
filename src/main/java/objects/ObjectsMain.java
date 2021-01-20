@@ -1,6 +1,6 @@
 package objects;
 
-import classstructurecontructors.Book;
+import classstructureconstructors.Book;
 
 public class ObjectsMain {
     public static void main(String[] args) {

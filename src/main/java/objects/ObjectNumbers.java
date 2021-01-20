@@ -1,7 +1,5 @@
 package objects;
 
-import classstructurecontructors.Book;
-
 public class ObjectNumbers {
     public static void main(String[] args) {
         Books book1 = new Books();

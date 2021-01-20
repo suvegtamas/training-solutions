@@ -1,7 +1,4 @@
-package classstructurecontructors;
-
-import java.sql.SQLOutput;
-import java.util.Scanner;
+package classstructureconstructors;
 
 public class BookMain {
     public static void main(String[] args) {

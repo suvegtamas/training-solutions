@@ -1,4 +1,4 @@
-package classstructurecontructors;
+package classstructureconstructors;
 
 public class Store {
     private String product;
