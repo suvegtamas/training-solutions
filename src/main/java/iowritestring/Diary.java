@@ -35,8 +35,8 @@ public class Diary {
         } catch (IOException e) {
             throw new IllegalStateException("Can't open file", e);
         }
-
     }
+
 
 
 }
