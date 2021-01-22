@@ -6,17 +6,14 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class CovidCounter {
-    public int countCovid(String fileName) {
+    public int countWord(String fileName,String word) {
         int count = 0;
         Path file = Path.of("src/main/resources/" + fileName);
         try (BufferedReader br = Files.newBufferedReader(file)){
             String line;
             while((line=br.readLine()) != null) {
-                String[] lineContent = line.split(" ");
-                for(String s : lineContent) {
-                    if(s.equals("koronavírus")) {
-                        count++;
-                    }
+                if(line.toLowerCase().contains(word)) {
+                    count++;
                 }
             }
         } catch (IOException e) {
@@ -26,7 +23,7 @@ public class CovidCounter {
     }
 
     public static void main(String[] args) {
-        int counted = new CovidCounter().countCovid("Index.html");
+        int counted = new CovidCounter().countWord("Index.html","koronavírus");
         System.out.println(counted);
     }
 }
