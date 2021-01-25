@@ -11,19 +11,24 @@ public class LongestCityName {
     private List<City> cityList = new ArrayList<>();
     private List<String> cityNames = new ArrayList<>();
 
-    public void readFile(Path file) {
+    public String outputLongestCityName(Path file) {
+        String result = "";
         try (BufferedReader br = Files.newBufferedReader(file)){
             String line;
             while((line=br.readLine()) != null) {
                 String[] splitter = line.split(";");
                 cityList.add(new City(splitter[0],splitter[1]));
             }
+            sortListByName(cityList);
+            result = longestName(cityNames);
+
         } catch (IOException e) {
             throw new IllegalStateException("Can't read file!", e);
         }
+        return result;
     }
-    public void sortListByName() {
-        for(City c : cityList) {
+    private void sortListByName(List<City> cities) {
+        for(City c : cities) {
             cityNames.add(c.getName());
         }
     }
@@ -34,21 +39,14 @@ public class LongestCityName {
         }
         return counter;
     }
-    private String longestName() {
-        String longest = cityNames.get(0);
-        for(String s : cityNames) {
+    private String longestName(List<String> names) {
+        String longest = names.get(0);
+        for(String s : names) {
             if(letterCounter(s) > letterCounter(longest)) {
                 longest = s;
             }
         }
         return longest;
-    }
-
-    public static void main(String[] args) {
-        LongestCityName lcn = new LongestCityName();
-        lcn.readFile(Path.of("src/main/resources/iranyitoszamok-varosok-2021.csv"));
-        lcn.sortListByName();
-        System.out.println(lcn.longestName());
     }
 
 }
