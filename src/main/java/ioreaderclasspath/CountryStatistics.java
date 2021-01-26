@@ -41,9 +41,5 @@ public class CountryStatistics {
     public List<Country> getCountryList() {
         return new ArrayList<>(countryList);
     }
-
-    public static void main(String[] args) {
-        CountryStatistics countryStatistics = new CountryStatistics();
-        countryStatistics.readFromFile("/country.txt");
-    }
+    
 }
