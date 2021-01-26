@@ -1,4 +1,4 @@
-package wek13d01;
+package week13d01;
 
 public class City {
     private String postalCode;
