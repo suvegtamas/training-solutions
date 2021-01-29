@@ -5,17 +5,16 @@ import java.util.Set;
 
 public class UniqueLetters {
     public int uniqueLetterCounter(String word) {
-      Set<Character> result = new HashSet<>();
-        for(Character c : word.toLowerCase().toCharArray()) {
-            if(checkLetter(c)) {
+        Set<Character> result = new HashSet<>();
+        for (char c : word.toLowerCase().toCharArray()) {
+            if (checkLetter(c)) {
                 result.add(c);
             }
         }
         return result.size();
     }
+
     private boolean checkLetter(char c) {
-       return c >= 'a' && c <= 'z';
+        return c >= 'a' && c <= 'z';
     }
-
-
 }
