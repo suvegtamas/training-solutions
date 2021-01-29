@@ -14,8 +14,8 @@ public class UniqueLetters {
         }
         return result.size();
     }
-    public boolean checkLetter(char c) {
-        if(c > 'a' && c < 'z') {
+    private boolean checkLetter(char c) {
+        if(c >= 'a' && c <= 'z') {
             return true;
         }
         return false;
