@@ -1,7 +1,6 @@
 package week13d05;
 
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 public class UniqueLetters {
@@ -18,10 +17,5 @@ public class UniqueLetters {
        return c >= 'a' && c <= 'z';
     }
 
-    public static void main(String[] args) {
-        UniqueLetters ul = new UniqueLetters();
-        int result = ul.uniqueLetterCounter("aabbc");
-        System.out.println(result);
-    }
 
 }
