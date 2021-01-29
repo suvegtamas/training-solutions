@@ -15,10 +15,7 @@ public class UniqueLetters {
         return result.size();
     }
     private boolean checkLetter(char c) {
-        if(c >= 'a' && c <= 'z') {
-            return true;
-        }
-        return false;
+       return c >= 'a' && c <= 'z';
     }
 
     public static void main(String[] args) {
