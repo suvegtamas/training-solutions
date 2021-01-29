@@ -11,6 +11,7 @@ public class UniqueLetters {
                 result.add(c);
             }
         }
+        System.out.println(result);
         return result.size();
     }
 

@@ -9,7 +9,7 @@ class UniqueLettersTest {
     @Test
     void uniqueLetterCounter() {
         UniqueLetters ul = new UniqueLetters();
-        int result = ul.uniqueLetterCounter("aabbc");
-        assertEquals(3,result);
+        int result = ul.uniqueLetterCounter("bebcdu");
+        assertEquals(5,result);
     }
 }
