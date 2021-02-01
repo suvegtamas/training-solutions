@@ -8,21 +8,17 @@ public class Indexer {
 
         for(String s : names) {
             char c = s.charAt(0);
-            if(result.containsKey(c)) {
-                List<String> temp = new ArrayList<>();
-                temp.addAll(result.get(c));
-                result.put(c, temp);
-            } else {
-                List<String> temp2= new ArrayList<>(Arrays.asList(s));
-                result.put(c,temp2);
+            if(!result.containsKey(c)) {
+                result.put(c,new ArrayList<>());
             }
-
+            result.get(c).add(s);
         }
+
         return result;
     }
 
     public static void main(String[] args) {
-        System.out.println(new Indexer().index(Arrays.asList("Odon", "Lujza", "Abraham", "Magdolna")));
+        System.out.println(new Indexer().index(Arrays.asList("Odon", "Lujza", "Abraham","Attila", "Magdolna")));
     }
 }
 /* System.out.println(new Indexer().index(Arrays.asList("Odon", "Lujza", "Abraham", "Magdolna")));
