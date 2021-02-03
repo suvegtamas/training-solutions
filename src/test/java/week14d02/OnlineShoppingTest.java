@@ -48,5 +48,5 @@ class OnlineShoppingTest {
         Map<String,Integer> resultMap = os.shoppingListStatistics();
         assertEquals(2,resultMap.get("rosmary").intValue());
     }
-    
+
 }
