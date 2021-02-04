@@ -6,9 +6,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class Student {
-    private Map<String, List<Integer>> studentMarks = new TreeMap<>();
+public class Student implements Comparable<Student> {
     private String name;
+    private Map<String, List<Integer>> studentMarks = new TreeMap<>();
 
     public Student(String name) {
         this.name = name;
@@ -33,8 +33,12 @@ public class Student {
     @Override
     public String toString() {
         return "Student{" +
-                "studentMarks=" + studentMarks +
-                ", name='" + name + '\'' +
+                "name='" + name + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Student o) {
+        return this.getName().compareTo(o.getName());
     }
 }
