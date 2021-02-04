@@ -1,5 +1,6 @@
 package week14d03;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -20,6 +21,10 @@ class ClassNoteBookTest {
         classNoteBook.add(s2);
         s1.addMarkToListBySubject("matek", 5);
         s1.addMarkToListBySubject("matek", 7);
+    }
+    @AfterEach
+    void tearDown() {
+        classNoteBook = null;
     }
 
     @Test
