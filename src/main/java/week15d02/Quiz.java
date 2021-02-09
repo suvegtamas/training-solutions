@@ -7,7 +7,7 @@ import java.nio.file.Path;
 import java.util.*;
 
 public class Quiz {
-    private List<Question> questions = new ArrayList<>();
+    private final List<Question> questions = new ArrayList<>();
 
     public void readFile(String fileName) {
         Path path = Path.of("src/main/resources/" + fileName);
@@ -75,6 +75,6 @@ public class Quiz {
     }
 
     public List<Question> getQuestions() {
-        return questions;
+        return new ArrayList<>(questions);
     }
 }
