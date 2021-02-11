@@ -1,4 +1,4 @@
-package inheritancemethod;
+package inheritancemethods;
 
 public class CreditAccount extends DebitAccount {
     private long overdraftLimit;

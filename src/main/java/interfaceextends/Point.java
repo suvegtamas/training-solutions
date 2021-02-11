@@ -1,4 +1,4 @@
-package inheritancemethods;
+package interfaceextends;
 
 public class Point {
     private final long x;

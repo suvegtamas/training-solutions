@@ -1,4 +1,4 @@
-package inheritancemethods;
+package interfaceextends;
 
 import java.util.ArrayList;
 import java.util.List;

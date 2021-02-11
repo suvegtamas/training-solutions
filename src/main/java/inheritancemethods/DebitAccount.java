@@ -1,4 +1,4 @@
-package inheritancemethod;
+package inheritancemethods;
 
 public class DebitAccount {
     private String accountNumber;
