@@ -1,4 +1,6 @@
-package week03;
+package week03d04;
+
+import week03d02.Phone;
 
 public class PhoneParser {
 

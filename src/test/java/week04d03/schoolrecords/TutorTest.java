@@ -1,4 +1,4 @@
-package week04.schoolrecords;
+package week04d03.schoolrecords;
 
 import org.junit.jupiter.api.Test;
 import schoolrecords.Subject;
