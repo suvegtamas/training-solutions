@@ -16,6 +16,7 @@ public class Histogram {
             for(int i = 0; i < Integer.parseInt(line); i++) {
                 sb.append("*");
             }
+            sb.append("\n");
         }
         return sb.toString();
     }

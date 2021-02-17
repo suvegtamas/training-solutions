@@ -26,15 +26,14 @@ public class Cruise {
     public double getPriceForPassenger(Passenger passenger) {
         double result = 0;
         if(passenger.getCruiseClass() == CruiseClass.LUXURY) {
-            result = basicPrice * 3.0;
+            result = passenger.getCruiseClass().getLuxuryPrice(basicPrice);
         }
         if(passenger.getCruiseClass() == CruiseClass.FIRST) {
-            result = basicPrice * 1.8;
+            result = passenger.getCruiseClass().getFirstClassPrice(basicPrice);
         }
         if(passenger.getCruiseClass() == CruiseClass.SECOND) {
-            result = basicPrice * 1.0;
+            result = passenger.getCruiseClass().getSecondClassPrice(basicPrice);
         }
-
         return result;
     }
 
