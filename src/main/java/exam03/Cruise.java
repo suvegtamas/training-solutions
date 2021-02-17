@@ -24,17 +24,7 @@ public class Cruise {
     }
 
     public double getPriceForPassenger(Passenger passenger) {
-        double result = 0;
-        if(passenger.getCruiseClass() == CruiseClass.LUXURY) {
-            result = passenger.getCruiseClass().getLuxuryPrice(basicPrice);
-        }
-        if(passenger.getCruiseClass() == CruiseClass.FIRST) {
-            result = passenger.getCruiseClass().getFirstClassPrice(basicPrice);
-        }
-        if(passenger.getCruiseClass() == CruiseClass.SECOND) {
-            result = passenger.getCruiseClass().getSecondClassPrice(basicPrice);
-        }
-        return result;
+        return passenger.getCruiseClass().getPercent() * basicPrice;
     }
 
     public Passenger findPassengerByName(String name) {

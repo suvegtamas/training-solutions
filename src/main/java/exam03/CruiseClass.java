@@ -9,14 +9,7 @@ public enum CruiseClass {
         this.percent = percent;
     }
 
-    public double getLuxuryPrice(double basicPrice) {
-        return LUXURY.percent * basicPrice;
+    public double getPercent() {
+        return percent;
     }
-    public double getFirstClassPrice(double basicPrice) {
-        return FIRST.percent * basicPrice;
-    }
-    public double getSecondClassPrice(double basicPrice) {
-        return SECOND.percent * basicPrice;
-    }
-
 }
