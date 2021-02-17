@@ -18,5 +18,5 @@ public enum CruiseClass {
     public double getSecondClassPrice(double basicPrice) {
         return SECOND.percent * basicPrice;
     }
-    
+
 }
