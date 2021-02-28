@@ -10,22 +10,22 @@ import java.util.Locale;
 
 public class BalatonStorm {
     public List<String> getStationsInStorm(BufferedReader reader) throws IOException {
-        List<String> stationsInStorm = new ArrayList<>();
+        List<String> result = new ArrayList<>();
         String station = "";
         String line;
         while ((line = reader.readLine()) != null) {
             if (line.contains("allomas")) {
-                String[] temp = line.split(": ");
-                String name = temp[1];
+                String[] parts = line.split(": ");
+                String name = parts[1];
                 station = name.substring(1, name.length() - 2);
             }
             if (line.contains("level\": 3")) {
-                stationsInStorm.add(station);
+                result.add(station);
             }
 
         }
-        stationsInStorm.sort(Collator.getInstance(new Locale("hu", "HU")));
-        return stationsInStorm;
+        result.sort(Collator.getInstance(new Locale("hu", "HU")));
+        return result;
     }
 
 }
