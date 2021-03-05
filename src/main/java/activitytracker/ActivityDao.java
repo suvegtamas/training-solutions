@@ -62,7 +62,6 @@ public class ActivityDao {
                         throw new IllegalArgumentException("Wrong data!");
                     }
                     stmt.setLong(1,activityId);
-                    System.out.println(activityId);
                     stmt.setTimestamp(2,Timestamp.valueOf(localDateTime));
                     stmt.setDouble(3,trackPoint.getLat());
                     stmt.setDouble(4,trackPoint.getLon());

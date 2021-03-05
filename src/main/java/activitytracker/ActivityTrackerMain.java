@@ -30,10 +30,11 @@ public class ActivityTrackerMain {
         flyway.migrate();
         TrackPoint t1 = new TrackPoint(LocalDate.of(2021,02,18),80.0,120.0);
         TrackPoint t2 = new TrackPoint(LocalDate.of(2021,02,18),80.0,120.0);
-        activityDao.saveActivity(a2);
+
         a2.addTrackPoint(t1);
         a2.addTrackPoint(t2);
-        activityDao.saveTrackPoint(List.of(t1,t2),2);
+        activityDao.saveActivity(a2);
+
 
 
 //        activityDao.saveActivity(a3);
