@@ -1,0 +1,9 @@
+Időpont;Név;Irányítószám;Életkor;E-mail cím;TAJ szám
+08:00;Allison Capoun;6033;100;acapoun2j@ted.com;123457699
+08:30;Amitie Caveney;6033;100;acaveneyn0@facebook.com;123465069
+09:00;Arlette Spinley;6033;61;aspinleyrh@dell.com;123466671
+09:30;Catriona Foulkes;6033;13;cfoulkesie@arizona.edu;181657390
+10:00;Katharina Innett;6033;48;kinnettal@issuu.com;123460590
+10:30;Natalya Agass;6033;14;nagasshe@google.es;123463041
+11:00;Sibilla Beale;6033;129;sbealeef@topsy.com;126457870
+11:30;Tine Lytell;6033;53;tlytell97@reddit.com;419383796
